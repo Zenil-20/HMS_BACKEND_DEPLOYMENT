@@ -16,7 +16,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: [process.env.FRONTEND_URL_ONE, process.env.FRONTEND_URL_TWO],
+  origin: [process.env.FRONTEND_URL_ONE, process.env.FRONTEND_URL_TWO, "https://hospital-managment-project.netlify.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Ensure OPTIONS is included
   allowedHeaders: ["Content-Type", "Authorization"], // Include necessary headers
   credentials: true, // If you need to send cookies or other credentials
